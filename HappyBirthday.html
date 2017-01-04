@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>珍珍生日快乐</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+</head>
+<body>
+</div >
+   <h1 align='center' style='color:red'>Happy Birthday My Love Girl</h1>
+   <h2 id='words' style='color:blue'></h2>
+</div>
+</body>
+<script type="text/javascript">
+  window.onload=function()
+  {
+   init();
+  }
+ var myWords = '珍珍，祝你生日快乐。么么哒';
+ var timeid = window.setInterval(showLeters,500);
+ var i = 0;
+ var len = myWords.length; 
+ function showLeters() 
+ { 
+    if(i==len)
+	{
+	   window.clearInterval(timeid);
+	}
+   document.getElementById("words").insertAdjacentText("beforeEnd",myWords.charAt(i));
+   i++;
+ } 
+ 
+ function init()
+ {
+ 
+ }
+</script>
+</html>
